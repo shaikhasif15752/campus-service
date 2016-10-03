@@ -60,5 +60,8 @@ public class Attendance extends BaseEntity {
     public List<Student> getStudents() {
         return students;
     }
+
+    @OneToOne(mappedBy="attendance")
+    private Teacher teacher;
 }
 
